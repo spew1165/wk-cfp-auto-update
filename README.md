@@ -239,19 +239,19 @@ npm run deploy
 
 ### 常见问题
 
-**Q: 工作流执行失败，提示 "KV namespace not found"**
+#### **Q: 工作流执行失败，提示 "KV namespace not found"**
 
 > 确保 `CF_API_TOKEN` 具有 `Account:Workers KV Storage:Edit` 权限，并检查 `KV_NAME` 是否与 Cloudflare Dashboard 中的名称完全一致。
 
-**Q: 自定义域名配置后 Worker 无法访问**
+#### **Q: 自定义域名配置后 Worker 无法访问**
 
 > 检查 DNS 是否已正确配置指向 Cloudflare，并确保 `CF_ROUTE_DOMAIN` 设置的域名已在 Cloudflare 添加为有效域名。
 
-**Q: 部署成功但 Worker 仍使用旧代码**
+#### **Q: 部署成功但 Worker 仍使用旧代码**
 
 > 清除浏览器缓存或使用隐私模式访问，因为边缘节点可能缓存了旧版本。
 
-**Q: javascript-obfuscator 安装失败**
+#### **Q: javascript-obfuscator 安装失败**
 
 > 工作流中已通过 `npm install -g` 全局安装，若本地调试可使用 `npx javascript-obfuscator` 替代。
 
